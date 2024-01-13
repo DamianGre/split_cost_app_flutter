@@ -43,7 +43,7 @@ class _SplitCostAppState extends State<SplitCostApp> {
                     decoration: InputDecoration(
                       labelText: 'Wprowadź kwotę rachunku',
                       border: OutlineInputBorder(),
-                      contentPadding: EdgeInsets.all(10), 
+                      contentPadding: EdgeInsets.all(10),
                     ),
                     onChanged: (value) {
                       setState(() {
@@ -104,10 +104,10 @@ class _SplitCostAppState extends State<SplitCostApp> {
                                 fontSize: 25
                             )),
                             SizedBox(width: 8),
-                            Text('$_cost', style: TextStyle(
+                            Text('${(_cost).toStringAsFixed(2)}', style: TextStyle(
                                 color: Colors.green,
                                 fontSize: 25
-                            ))
+                            )) 
                           ],
                         ),
                         SizedBox(height: 20),
